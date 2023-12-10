@@ -1,6 +1,6 @@
 # React Chess Game
 
-This application is a chess game that is developed in React and Redux which also supports dark and light theme
+This application is a simple chess game that is developed in React and Redux which also supports dark and light theme
 
 Technologies used
 -----------------
