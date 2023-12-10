@@ -9,9 +9,6 @@ class Engine {
                 callback({ bestMove });
             });
         };
-        // Init engine
-        this.stockfish.postMessage("uci");
-        this.stockfish.postMessage("isready");
     }
 
     evaluatePosition(fen, depth) {
@@ -19,10 +16,10 @@ class Engine {
         this.stockfish.postMessage(`go depth ${depth}`);
     }
     stop() {
-        this.stockfish.postMessage("stop"); // Run when changing positions
+        this.stockfish.postMessage("stop");
     }
     quit() {
-        this.stockfish.postMessage("quit"); // Good to run this before unmounting.
+        this.stockfish.postMessage("quit");
     }
 }
 
